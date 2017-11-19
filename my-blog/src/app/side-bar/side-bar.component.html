@@ -1,0 +1,11 @@
+<div class="side-bar">
+<div class="w3-sidebar w3-pink w3-bar-block" style="width:25%">
+  <a class="w3-bar-item w3-button" (click)="setHome()">Home</a>
+  <a class="w3-bar-item w3-button" (click)="setMyBlogs()">My Blogs</a>
+  <a class="w3-bar-item w3-button" (click)="setFavourites()">Favourites</a>
+  <a class="w3-bar-item w3-button" data-toggle="modal" data-target="#Add">Add New Blog</a>
+  <div *ngFor="let category of categories">
+    <a class="w3-bar-item w3-button"(click)="setCategory(category.id)">{{category.name}}</a>
+  </div>
+</div>
+</div>

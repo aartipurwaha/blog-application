@@ -1,0 +1,9 @@
+<div id="login-blogs">
+
+
+  <div *ngFor="let blog of blogs">
+    <app-card [user]="user" [blog]="blog" (Fav)="getFav($event)" (UnFav)="getUnFav($event)" (Delete)="getDelete($event)" (Update)="getUpdate($event)"></app-card>
+  </div>
+
+
+</div>

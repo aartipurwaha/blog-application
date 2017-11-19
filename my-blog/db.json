@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "username": "aarti",
+      "password": "aarti123",
+      "favourites": [
+        2,
+        3,
+        5
+      ],
+      "id": 1
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "favourites": [
+        1,
+        2,
+        4
+      ],
+      "id": 2
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Angular",
+      "description": "Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.",
+      "authorId": 2,
+      "categoryId": 1,
+      "date": "2017-09-12",
+      "id": 1
+    },
+    {
+      "title": "Tumour",
+      "description": "Tumours are groups of abnormal cells that form lumps or growths. They can start in any one of the trillions of cells in our bodies. Tumours grow and behave differently, depending on whether they are cancerous (malignant), non-cancerous (benign) or precancerous.",
+      "authorId": 1,
+      "categoryId": 3,
+      "date": "2017-02-17",
+      "id": 2
+    },
+    {
+      "title": "Twitter",
+      "description": "Twitter is an online news and social networking service where users post and interact with messages, called tweets. Registered users can post tweets, but those who are unregistered can only read them. Users access Twitter through its website interface, SMS or a mobile device app. Twitter, Inc. is based in San Francisco, California, United States, and has more than 25 offices around the world.",
+      "authorId": 1,
+      "categoryId": 5,
+      "date": "2017-05-05",
+      "id": 3
+    },
+    {
+      "title": "TED",
+      "description": "TED (Technology, Entertainment, Design) is a media organization which posts talks online for free distribution, under the slogan IDEAS WORTH SPREADING. TED was founded in February 1984 as a conference, which has been held annually since 1990. TED's early emphasis was technology and design, consistent with its Silicon Valley origins, but it has since broadened its focus to include talks on many scientific, cultural, and academic topics.",
+      "authorId": 2,
+      "categoryId": 1,
+      "date": "2017-11-18",
+      "id": 4
+    },
+    {
+      "title": "MBA",
+      "description": "The Master of Business Administration (MBA or M.B.A.) is a master's degree in business administration (management).The MBA degree originated in the United States in the early 20th century when the country industrialized and companies sought scientific approaches to management. The core courses in an MBA program cover various areas of business such as accounting, applied statistics, business communication, business ethics, business law, finance, managerial economics, management, marketing and operations in a manner most relevant to management analysis and strategy.",
+      "authorId": 2,
+      "categoryId": 2,
+      "date": "2017-08-13",
+      "id": 5
+    },
+    {
+      "title": "Cultural Heritage",
+      "description": "Cultural heritage is the legacy of physical science artifacts and intangible attributes of a group or society that are inherited from past generations, maintained in the present and bestowed for the benefit of future generations.",
+      "authorId": 2,
+      "categoryId": 4,
+      "date": "2017-01-20",
+      "id": 6
+    },
+    {
+      "title": "Babel",
+      "description": "Babel is a transpiler used to transpile ES6 to ES5.",
+      "authorId": 1,
+      "categoryId": 1,
+      "date": "2017-11-19T07:40:56.065Z",
+      "id": 7
+    }
+  ],
+  "categories": [
+    {
+      "name": "Technology",
+      "id": 1
+    },
+    {
+      "name": "Management",
+      "id": 2
+    },
+    {
+      "name": "Medical",
+      "id": 3
+    },
+    {
+      "name": "Cultural",
+      "id": 4
+    },
+    {
+      "name": "Social",
+      "id": 5
+    }
+  ]
+}

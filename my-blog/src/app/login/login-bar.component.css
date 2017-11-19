@@ -1,0 +1,13 @@
+.navbar-header {
+  float: left;
+  padding: 15px;
+  width: 90%;
+}
+.navbar-brand {
+  float:none;
+}
+
+a:hover {
+  cursor:pointer;
+}
+

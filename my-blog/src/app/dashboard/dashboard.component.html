@@ -1,0 +1,83 @@
+<app-login-bar></app-login-bar>
+
+<app-side-bar [categories]="categories" (Home)="getHome($event)" (MyBlogs)="getMyBlogs($event)" (Favourites)="getFavourites($event)" (Category)="getCategory($event)"></app-side-bar>
+
+<app-page-content [user]="user" [blogs]="filteredBlogs" (Fav)="Fav($event)" (UnFav)="unFav($event)" (Delete)="deletePost($event)" (Update)="update($event)"></app-page-content>
+
+<div class="modal fade" id="Add" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Blog</h4>
+      </div>
+
+      <div class="modal-body">
+          <input  type="textbox" #title placeholder="Enter Title">
+          <textarea #description placeholder="Enter Description"></textarea>
+
+          <div class="row">
+            <div class="col-sm-4">
+             <h6>Select category</h6>
+            </div>
+
+            <div class="col-sm-8">
+              <select #category class="selectpicker btn btn-default" placeholder="Select category">
+                <option value="1">Technology</option>
+                <option value="2">Management</option>
+                <option value="3">Medical</option>
+                <option value="4">Cultural</option>
+                <option value="5">social</option>
+              </select>
+            </div>
+          </div>
+      </div>
+
+      <div class="add-btn">
+        <button class="btn btn-block btn-success" data-dismiss="modal" (click)="Add(title.value,description.value,category.value)">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="Edit" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Update Blog</h4>
+      </div>
+
+      <div class="modal-body">
+        <input  type="textbox" #updatetitle placeholder="Enter Title" [ngModel]="blogToBeUpdated.title">
+        <textarea #updatedescription placeholder="Enter Description" [(ngModel)]="blogToBeUpdated.description"></textarea>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <h6>Select category</h6>
+          </div>
+
+          <div class="col-sm-8">
+            <select #updatecategory class="selectpicker btn btn-default" placeholder="Select category">
+              <option value="1">Technology</option>
+              <option value="2">Management</option>
+              <option value="3">Medical</option>
+              <option value="4">Cultural</option>
+              <option value="5">social</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-btn">
+        <button class="btn btn-block btn-success" data-dismiss="modal" (click)="updatePost(updatetitle.value,updatedescription.value,updatecategory.value)">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+

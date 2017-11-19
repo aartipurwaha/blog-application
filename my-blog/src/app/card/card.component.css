@@ -1,0 +1,19 @@
+#blog-card {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.desc-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.w3-bar-item {
+  width: 50%;
+}
+

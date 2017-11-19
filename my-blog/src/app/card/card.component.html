@@ -1,0 +1,27 @@
+
+
+<div class="w3-container">
+  <div id="blog-card">
+    <div class="w3-card-4">
+      <header class="w3-container w3-pale-red">
+        <h3>
+          {{blog.title}}
+          <a *ngIf="!showFav"><span class="pull-right glyphicon glyphicon-star-empty" (click)="setFav(blog)"></span></a>
+          <a *ngIf="showFav"><span class="pull-right glyphicon glyphicon-star" (click)="setUnFav(blog)"></span></a>
+        </h3>
+      </header>
+
+      <div class="w3-container">
+        <div class="desc-container">
+          <p>{{blog.description}}</p>
+        </div>
+      </div>
+
+      <div class="w3-bar" *ngIf="showButtons">
+        <button class="w3-bar-item w3-button w3-dark-grey" data-toggle="modal" data-target="#Edit" (click)="setUpdate(blog)">Edit</button>
+        <button class="w3-bar-item w3-button w3-pink" (click)="setDelete(blog)">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>

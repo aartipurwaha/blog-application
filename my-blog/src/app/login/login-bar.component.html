@@ -1,0 +1,37 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand navbar-left">My Blog Application</a>
+    </div>
+
+
+    <ul class="nav">
+      <!-- Trigger the modal with a button -->
+
+      <li *ngIf="logout"><a class="navbar-brand navbar-right"(click)="logoutUser()">Logout</a></li>
+      <li *ngIf="login"><a class="navbar-brand navbar-right" data-toggle="modal" data-target="#myModal">Login</a></li>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+              <input type="textbox" #name placeholder="Enter username" />
+              <input type="textbox" #password placeholder="Enter password" />
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-dismiss="modal" (click)="loginUser(name.value,password.value)">Submit</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>
