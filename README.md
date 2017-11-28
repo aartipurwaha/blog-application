@@ -19,8 +19,4 @@ You need to create two key-value pairs in browser's local storage :
 1. isloggedin - It checks whether the user is logged-in or logged-out. Its value is true till the user is logged-in, otherwise false.
 2. userId - It stores the id of the user who is logged-in.
 
-Two users have been created in db.json file :
-1. username- admin , password- admin
-2. username- aarti , password- aarti123
-   
-You can login using these two credentials.
+Two users have been created in db.json file. You can login using these credentials.
